@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62,8%; /* 1rem=10px */
+}
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    /* position: fixed;  */
+}
+.header-container{
+    display: flex;
+    background-color: #fff;
+    justify-content: space-between;
+}
+header nav a{
+    font-size: 1.4rem;
+    color: #6b7380;
+    text-decoration: none;
+    padding: 0 2.5rem;
+    margin-right: 1.5rem;
+}
+header nav a:hover{
+    color:#ff6600;
+    /* text-decoration: underline; */
+}
+.logo img{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 6rem;
+    margin: 0 2.5rem;
+}
+
+
+/* PORTADA TALLERES*/
+.portada{
+    display: flex;
+    justify-content: center;
+}
+.portada img{
+    width: 100%;
+    border-bottom: .25rem solid #333;
+    border-top: .25rem solid #333;
+}
+
+/* BUSCADOR */
+.buscador-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.buscador{
+    position:absolute;
+    padding: 0;
+}
+.buscador-input{
+    width: 0;
+    height: 4rem;
+    padding: 0 1.75rem;
+    font-size: 1.5rem;
+    color: #ff8300;
+    outline: none;
+    border: .25rem solid #333;
+    border-radius: 3rem;
+    transition: all 0.75s ease;
+}
+
+.buscador-button{
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    background: #ff6600;
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+    border-radius: 50%;
+    cursor: pointer;
+    line-height: 3rem;
+    top: 0;
+    right: 0;
+}
+.buscador-container:hover .buscador-input{
+    width: 30rem;
+}
+.buscador-container .buscador-input:focus{
+    width: 30rem;
+}
+
+/* DIV CONTAINER */
+.div-container{
+    margin: 4rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.texto1{
+    font-size: 2.75rem;
+}
+.texto2{
+    font-size: 2.75rem;
+    color: #ff8300;
+}
+h2{
+    margin: 2rem auto;
+    color: #ff8300;
+    text-align: center;
+    font-size: 2.5rem;
+}
+/* DIV CONTAINER TALLERES DISPONIBLES */
+.div-talleres{
+    margin: 5rem auto;
+}
+.div-subtalleres{
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.div-talleres img{
+    max-width: 65%;
+    border-radius: .5rem;
+}
+.div-talleres img:hover{
+    max-width: 66%;
+    border-radius: .5rem;
+    transition: .75s;
+    box-shadow: .25rem .25rem 2rem #333;
+}
+
+/* FOOTER O PIE DE PÁGINA */
+.footer-container-redes{
+    background-color: #6b7380;
+    padding:2rem 1rem;
+    color: white;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.redes-face{
+    background-color: #575e68;
+    border-radius: 50%;
+}
+.redes-face:hover{
+    background-color: #3b5999;
+    border-radius: 50%;
+}
+.redes-insta{
+    background-color: #575e68;
+    border-radius: 50%;
+}
+.redes-insta:hover{
+    background-color: #C13584;
+    border-radius: 50%;
+}
+.redes-whats{
+    background-color: #575e68;
+    border-radius: 50%;
+}
+.redes-whats:hover{
+    background-color: #25D366;
+    border-radius: 50%;
+}
+.redes-you{
+    background-color: #575e68;
+    border-radius: 50%;
+}
+.redes-you:hover{
+    background-color: #c4302b;
+    border-radius: 50%;
+}
+.footer-container-copy{
+    background-color: #575e68;
+    padding: 1rem;
+    color: white;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footer-container-p{
+    color: #ff6600;
+}
+footer div a img{
+    height: 4rem;
+    width: 4rem;
+}

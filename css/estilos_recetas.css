@@ -1,0 +1,472 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62,8%;/* 1rem=10px */
+}
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    /* position: fixed;  */
+}
+.header-container{
+    display: flex;
+    background-color: #fff;
+    justify-content: space-between;
+}
+header nav a{
+    font-size: 1.4rem;
+    color: #6b7380;
+    text-decoration: none;
+    padding: 0 2.5rem;
+    margin-right: 1.5rem;
+}
+header nav a:hover{
+    color:#ff6600;
+    /* text-decoration: underline; */
+}
+.logo img{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 6rem;
+    margin: 0 2.5rem;
+}
+
+
+/* PORTADA RECETAS */
+.portada{
+    display: flex;
+    justify-content: center;
+}
+.portada img{
+    width: 100%;
+    border-bottom: .25rem solid #333;
+    border-top: .25rem solid #333;
+}
+
+/* BUSCADOR */
+.buscador-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.buscador{
+    position:absolute;
+    padding: 0;
+}
+.buscador-input{
+    width: 0;
+    height: 4rem;
+    padding: 0 1.75rem;
+    font-size: 1.5rem;
+    color: #ff8300;
+    outline: none;
+    border: .25rem solid #333;
+    border-radius: 3rem;
+    transition: all 0.75s ease;
+}
+
+.buscador-button{
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    background: #ff6600;
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+    border-radius: 50%;
+    cursor: pointer;
+    line-height: 3rem;
+    top: 0;
+    right: 0;
+}
+.buscador-container:hover .buscador-input{
+    width: 30rem;
+}
+.buscador-container .buscador-input:focus{
+    width: 30rem;
+}
+
+
+/* DIV CONTAINER */
+.div-container{
+    margin: 4rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.texto1{
+    font-size: 2.75rem;
+}
+.texto2{
+    font-size: 2.75rem;
+    color: #ff8300;
+}
+
+
+/* SECCION PRODUCTOS */
+section{
+    margin: auto 2rem;
+}
+
+h2{
+    margin: 2rem auto;
+    color: #ff8300;
+    text-align: center;
+}
+.container-flex-padre{
+    margin: 1rem 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.container-flex{
+    margin: 1rem auto;
+    padding: 1.5rem;
+    width: 12rem;
+    height: 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    background-color: #ececec;
+    border-radius: 1rem;
+}
+.container-flex:hover{
+    width: 10rem;
+    background-color: #ffffff;
+}
+.container-flex img{
+    margin: 1rem auto;
+    width: 10rem;
+}
+h3{
+    font-size: 1.25rem;
+}
+.container-flex-padre2{
+    margin: 2rem 22rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.container-flex-hijo2{
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+.container-flex-hijo2 img{
+    margin: 2rem auto;
+    width: 4rem;
+}
+.container-flex-hijo2:hover{
+    width: 10rem;
+    background-color: #ffffff;
+}
+
+.container-recetas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div-container-recetas{
+    width: 80%;
+    border:#6b7380;
+    background-color: #ececec;
+}
+/* .menu{
+    width: max-content;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.flip-container{
+    margin: auto 10rem;
+    display: flex;
+    justify-content:space-around;
+}
+.flip-container-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flip-container-text h2{
+    color:#ff8300;
+    font-size: 5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.flip-container-text p{
+    font-size: 1.8rem;
+}
+ */
+/* CONTENEDOR DE BOTON DE COMPRA EN PORTADA */
+/* .flip-container-comprar{
+    display:flex;
+    flex-direction: row;
+    justify-content:left;
+    align-items:center; 
+    text-decoration: none;
+}
+.flip-container-comprar a i{
+    margin: auto 3rem;
+    font-size: 4rem;
+    padding: 1rem;
+    color: #fff;
+    background-color: #ff8300;
+    display:flex;
+    justify-content:left;
+    align-items:flex-end; 
+    border-radius: 15%;
+} */
+/* IMGAGEN FLIP 2.0 */
+/* .flip-container img{
+    border-radius: 3%;
+    width: 37rem;
+}
+.flip-container a img{
+    margin: 1rem;
+    background-color: #ff8300; 
+    color: #ffffff;  
+}
+.flip-container-comprar-txt a p{
+    padding: 0 1rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    text-decoration: none;
+} */
+/* SECTION PRODUCTOS */
+/* .section-productos{
+    margin: 2rem 18rem;
+    font-size: 2rem;
+} */
+/* CARDS PRODUCTOS */
+/* .container__card{
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+    perspective: 1000px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card__father{
+    margin: 20px;
+    perspective: 1000px;
+}
+
+.card__father:hover .card{
+    transform: rotateY(180deg);
+}
+
+
+.card{
+    width: 350px;
+    height: 400px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 600ms;
+}
+
+.card__front{
+    background-size: cover;
+    background-position: center;
+}
+
+
+.card__front,
+.card__back{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    border-radius: 20px;
+}
+
+.card__back{
+    transform: rotateY(180deg);
+    background: white;
+}
+
+.body__card_front{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transform: translateZ(60px);
+}
+
+.bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.4);
+    border-radius: 20px;
+}
+
+.body__card_back{
+    padding: 40px;
+    text-align: center;
+    transform: translateZ(60px);
+}
+
+.body__card_back p{
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.body__card_back input{
+    padding: 10px 40px;
+    margin-top: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    background: #58B0F6;
+    box-shadow: 1px 1px 30px -5px #58B0F6;
+    border-radius: 10px;
+    transition: box-shadow 600ms;
+}
+
+.body__card_back input:hover{
+    box-shadow: 1px 1px 30px 0px #449de6;
+} */
+
+/* FORMULARIO */
+/* form{
+    margin: 5rem 30rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+input{
+    background-color: #fff;
+    padding: .5rem 2.5rem;
+    display: inline;
+}
+input:focus{
+    outline: none;
+    color: #575e68
+}
+label{
+    color:#ff6600;
+    font-size: 1.5rem;
+    left: 5px;
+    top: 10px;
+    transition: 0.5s ease-in-out all;
+    pointer-events: none;  
+}
+.button{
+    width: 100%;
+    padding: 1rem 3rem;
+    border-radius: 5%;
+} */
+
+/* ICONOS */
+.icons-container{
+    display: flex;
+    align-items: center;
+    justify-content:space-around; 
+    margin: 0 20rem;
+}
+.icon-container-sum{
+    width: 5rem;
+}
+.icon-container-ori{
+    width: 5rem;
+}
+.icon-container-env{
+    width: 5rem;
+}
+.icon-container-can{
+    width: 5rem;
+}
+.icon-container-ase{
+    width: 5rem;
+}
+.icon-container-txt{
+    text-align: center; 
+}
+.footer-container-redes{
+    background-color: #6b7380;
+    padding:2rem 1rem;
+    color: white;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.redes-face{
+    background-color: #575e68;
+    border-radius: 50%;
+}
+.redes-face:hover{
+    background-color: #3b5999;
+    border-radius: 50%;
+}
+.redes-insta{
+    background-color: #575e68;
+    border-radius: 50%;
+}
+.redes-insta:hover{
+    background-color: #C13584;
+    border-radius: 50%;
+}
+.redes-whats{
+    background-color: #575e68;
+    border-radius: 50%;
+}
+.redes-whats:hover{
+    background-color: #25D366;
+    border-radius: 50%;
+}
+.redes-you{
+    background-color: #575e68;
+    border-radius: 50%;
+}
+.redes-you:hover{
+    background-color: #c4302b;
+    border-radius: 50%;
+}
+.footer-container-copy{
+    background-color: #575e68;
+    padding: 1rem;
+    color: white;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footer-container-p{
+    color: #ff6600;
+}
+footer div a img{
+    height: 4rem;
+    width: 4rem;
+}
